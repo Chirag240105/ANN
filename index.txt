@@ -141,3 +141,36 @@ That's why we need memory
 
 Embedding -> Window Context -> Need Memory
 = RNN - Recurrent Neural Network
+
+
+Why Rnn ?
+
+treat every word independently results no context of that 
+so 
+
+RNN introduces the memory of previous words 
+-- instead of processing whole sentence  at once , RNN process one word at a time 
+x1 -> x2 -> x3 -> x4
+
+at each stage:
+-It remembers past information 
+["I" ,"did" ,"not" ,"like" ,"the" ,"movie"]
+Step by Step RNN Algo:
+1. Initialize Memory
+a. memory = empty (at start)
+memory is called hidden state (we will use it ) 
+
+2. 
+Read first word
+input = " I "
+updates the memory 
+memory = understanding of " I "
+3. 
+Read next word :
+input = "did"
+3. 
+use memory for prediction 
+
+according to 
+new Memory = old memory + new word
+
